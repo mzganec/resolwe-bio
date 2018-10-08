@@ -1,7 +1,7 @@
 - slug: sample
   name: Sample annotation
   description: Sample meta data compliant with GEO and ENCODE databases.
-  version: 1.1.0
+  version: 1.2.0
   schema:
     - name: general
       label: General
@@ -225,6 +225,11 @@
             Describe how your sample was treated, at different timepoints, if using non-chemical
             treatments e.g. exercise, aging, etc.
           required: false
+        - name: other_characteristics
+          label: Other characteristics
+          type: basic:string
+          required: false
+          description: Sample characteristics not specified in other fields.
         - name: annotator
           label: Annotator
           type: basic:string
